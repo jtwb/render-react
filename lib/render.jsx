@@ -1,11 +1,11 @@
 /** @jsx React.DOM */
 var React = require('React');
 
-var IndexView = require('../views/index');
 
 module.exports = {
-  run: function() {
+  run: function(path) {
+    var IndexView = require(path);
     var html = React.renderToStaticMarkup(<IndexView />);
-    console.log(html);
+    return html;
   }
 };

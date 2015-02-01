@@ -3,4 +3,5 @@ require('node-jsx').install({ extension: '.jsx' });
 
 var render = require('./lib/render');
 
-render.run();
+var html = render.run('../views/index');
+console.log(html);
