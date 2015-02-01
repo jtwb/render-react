@@ -1,0 +1,16 @@
+{
+  "name": "try-view-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "jtwb",
+  "license": "ISC",
+  "dependencies": {
+    "node-jsx": "^0.12.4",
+    "react": "^0.12.2",
+    "react-tools": "^0.12.2"
+  }
+}
