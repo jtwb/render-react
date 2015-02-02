@@ -5,7 +5,19 @@
 `render({ layout: layoutname, body: viewname })` will load `bodies/{viewname}.jsx` and `layouts/{layoutname}.jsx` and return `React.renderToStaticMarkup(<YourLayout><YourView /></YourLayout>)`
 
 
-Simple:
+#### Examples
+
+See [test/index.js](test/index.js)
+
+
+Very simple example:
+```javascript
+var render = require('render-react');
+console.log(render({ body: 'index' }, { title: 'Homepage' }));
+```
+
+
+Simple example:
 ```javascript
 var render = require('render-react');
 
@@ -19,9 +31,4 @@ var html = render({
 console.log(html);
 ```
 
-Very simple:
-```javascript
-var render = require('render-react');
-console.log(render({ body: 'index' }, { title: 'Homepage' }));
-```
 
