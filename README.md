@@ -7,7 +7,7 @@
 
 #### Examples
 
-See [test/index.js](test/index.js)
+See [test/](test/)
 
 
 Very simple example:
