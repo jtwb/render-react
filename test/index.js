@@ -7,5 +7,18 @@ var html = render({
 
 console.log(html);
 
-console.log('---', render({ body: 'index' }));
+var props = { title: 'My Homepage', games: [{}] };
+html = render({
+  layout: 'default',
+  body: 'index'
+}, props);
 
+console.log("\n", html);
+
+
+console.log("\n", render({ body: 'index' }));
+
+console.log("\n", render({ body: 'index' }, { games: [{}, {}, {}] }));
+
+
+console.log('DONE');

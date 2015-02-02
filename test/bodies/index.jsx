@@ -4,7 +4,7 @@ var React = require('react');
 
 var IndexView = React.createClass({
   render: function() {
-    var games = this.props.games;
+    var games = this.props.games || [];
     return (
       <div>
         <nav className="navbar navbar-default navbar-static-top navbar-inverse" role="navigation">
@@ -15,6 +15,7 @@ var IndexView = React.createClass({
         </nav>
         <div className="container">
           <h1>Game listing</h1>
+          <p>Count: {games.length}</p>
         </div>
       </div>
     );

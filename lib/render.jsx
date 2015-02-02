@@ -8,9 +8,10 @@ var LAYOUTS_PATH = path.resolve('./layouts');
 var EXT = '.jsx';
 
 
-module.exports = function renderReact(config) {
+module.exports = function renderReact(config, props) {
   var layoutName = config.layout;
   var bodyName = config.body;
+  var props = props || {};
 
   if (!bodyName) {
     throw 'Ah, feck, the body view filename is missin';
@@ -20,8 +21,8 @@ module.exports = function renderReact(config) {
 
   if (layoutName) {
     var Layout = require(path.join(LAYOUTS_PATH, layoutName) + EXT);
-    return React.renderToStaticMarkup(<Layout><Body /></Layout>);
+    return React.renderToStaticMarkup(<Layout {...props}><Body {...props} /></Layout>);
   } else {
-    return React.renderToStaticMarkup(<Body />);
+    return React.renderToStaticMarkup(<Body {...props} />);
   }
 };
