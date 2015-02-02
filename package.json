@@ -1,13 +1,17 @@
 {
-  "name": "try-view-loader",
+  "name": "render-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "Render React components from your project to static markup",
+  "author": "jtwb",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "cd test/ ; node index.js"
   },
-  "author": "jtwb",
-  "license": "ISC",
   "dependencies": {
     "node-jsx": "^0.12.4",
     "react": "^0.12.2",
