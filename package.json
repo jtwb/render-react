@@ -1,6 +1,6 @@
 {
   "name": "render-react",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "Render React components from your project to static markup",
   "author": "jtwb",
   "license": "MIT",
